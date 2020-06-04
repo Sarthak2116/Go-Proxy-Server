@@ -25,9 +25,13 @@ From POSTMAN, try hitting these endpoints with these instructions
 
 <pre>
 
-<b>GET</b> localhost:1323/auth :- Set the header as (Username: string) where string is the name that has to be verified. You will recieve the a token upon a successful verification. 
+<b>GET</b> localhost:1323/auth :- Set the header as (Username: string) where string is the name that has to be verified. 
 
-<b>GET</b> localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request. If the token is valid then the user details will be returned.
+You will recieve a token upon a successful verification. 
+
+<b>GET</b> localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request. 
+
+If the token is valid then the user details will be returned.
 
 <b>GET</b> localhost:1323/service/name :- You will recieve the name of the microservice upon hitting this endpoint.
 </pre>
