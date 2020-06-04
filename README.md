@@ -23,10 +23,11 @@ go run main.go (Inside Proxy folder): This server runs on :1323 port
 ```
 From POSTMAN, try hitting these endpoints with these instructions
 
-```
-**GET** localhost:1323/auth :- Set the header as Username:<string> where string is the name that has to be verified. You will recieve the a token upon a successful verification. 
+<pre>
 
-**GET** localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request. If the token is valid then the user details will be returned.
+<b>GET</b> localhost:1323/auth :- Set the header as Username:<string> where string is the name that has to be verified. You will recieve the a token upon a successful verification. 
 
-**GET** localhost:1323/service/name :- You will recieve the name of the microservice upon hitting this endpoint.
-```
+<b>GET</b> localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request. If the token is valid then the user details will be returned.
+
+<b>GET</b> localhost:1323/service/name :- You will recieve the name of the microservice upon hitting this endpoint.
+</pre>
