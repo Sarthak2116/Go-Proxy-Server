@@ -1,7 +1,7 @@
 # Go-Proxy-Server
 This task is an implementation of reverse proxy in **golang** using **echo framework**.
 
-The authorization is done through JWT.
+The authorization is done through JWT. The db used is mongodb.
 
 The verification of user and generation of token is in `Auth service`. **Endpoint:** `/auth`
 
@@ -27,9 +27,9 @@ From POSTMAN, try hitting these endpoints with these instructions
 
 <b>GET</b> localhost:1323/auth :- Set the header as (Username: string) where string is the name of the user that has to be verified. 
 
-You will recieve a token upon a successful verification.
+You will recieve a token upon a successful verification. The token has the name of the user encoded.
 
-<b>GET</b> localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request. 
+<b>GET</b> localhost:1323/user/profile :-  Send the token recieved above as the bearer token and send the request, for getting details of the user. 
 
 If the token is valid then the user details will be returned.
 
